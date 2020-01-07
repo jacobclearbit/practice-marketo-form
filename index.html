@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Marketo Form - Test User</title>
-	
-	<script>!function(w){var clearbit=w.clearbit=w.clearbit||[];if(!clearbit.initialize)if(clearbit.invoked)w.console&&console.error&&console.error("Clearbit snippet included twice.");else{clearbit.invoked=!0;clearbit.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];clearbit.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);clearbit.push(e);return clearbit}};for(var t=0;t<clearbit.methods.length;t++){var e=clearbit.methods[t];clearbit[e]=clearbit.factory(e)}clearbit.load=function(t){var e=document.createElement("script");e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"x.clearbitjs.com/v1/"+t+"/clearbit.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};clearbit.SNIPPET_VERSION="3.1.0";    clearbit.load("pk_0ad1455e7201af794e66c4cfe074abab");    clearbit.page();  }}(window);</script>
-	
+
+	<script>!function (w) { var clearbit = w.clearbit = w.clearbit || []; if (!clearbit.initialize) if (clearbit.invoked) w.console && console.error && console.error("Clearbit snippet included twice."); else { clearbit.invoked = !0; clearbit.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "page", "once", "off", "on"]; clearbit.factory = function (t) { return function () { var e = Array.prototype.slice.call(arguments); e.unshift(t); clearbit.push(e); return clearbit } }; for (var t = 0; t < clearbit.methods.length; t++) { var e = clearbit.methods[t]; clearbit[e] = clearbit.factory(e) } clearbit.load = function (t) { var e = document.createElement("script"); e.async = !0; e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "x.clearbitjs.com/v1/" + t + "/clearbit.js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(e, n) }; clearbit.SNIPPET_VERSION = "3.1.0"; clearbit.load("pk_0ad1455e7201af794e66c4cfe074abab"); clearbit.page(); } }(window);</script>
+
 </head>
+
 <body>
 
 	<h1>Marketo Form</h1>
@@ -17,7 +19,20 @@
 	<script>MktoForms2.loadForm("//app-ab32.marketo.com", "797-LZE-483", 1166);</script>
 
 	<!-- Clearbit Marketo -->
-	<script async src="https://marketo.clearbit.com/assets/v1/marketo/forms.js" data-clearbit-publishable-key="pk_0ad1455e7201af794e66c4cfe074abab"></script>
+	<script async src="https://marketo.clearbit.com/assets/v1/marketo/forms.js"
+		data-clearbit-publishable-key="pk_0ad1455e7201af794e66c4cfe074abab"></script>
+
+	<!-- Segment Analytics.js -->
+	<script>
+		!function () {
+			var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+			analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"]; analytics.factory = function (t) { return function () { var e = Array.prototype.slice.call(arguments); e.unshift(t); analytics.push(e); return analytics } }; for (var t = 0; t < analytics.methods.length; t++) { var e = analytics.methods[t]; analytics[e] = analytics.factory(e) } analytics.load = function (t, e) { var n = document.createElement("script"); n.type = "text/javascript"; n.async = !0; n.src = "https://cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(n, a); analytics._loadOptions = e }; analytics.SNIPPET_VERSION = "4.1.0";
+				analytics.load("bY6RLopOAEVnFbh2iiYxO2wUichaVSDk");
+				analytics.page();
+			}
+		}();
+	</script>
 
 </body>
+
 </html>
