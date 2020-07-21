@@ -14,16 +14,18 @@
 	<p>This is a test Marketo form with Clearbit Enrichment.</p>
 
 	<!-- Marketo Form -->
-	<script src="//app-ab32.marketo.com/js/forms2/js/forms2.min.js"></script>
-	<form id="mktoForm_1166"></form>
-	<script>MktoForms2.loadForm("//app-ab32.marketo.com", "797-LZE-483", 1166);</script>
+  <script src="//app-ab32.marketo.com/js/forms2/js/forms2.min.js"></script>
+  <form id="mktoForm_1282"></form>
+  <script>MktoForms2.loadForm("//app-ab32.marketo.com", "797-LZE-483", 1282);</script>
 
 	<!-- Clearbit Marketo -->
-	<script async src="https://marketo.clearbit.com/assets/v1/marketo/forms.js"
-		data-clearbit-publishable-key="pk_0ad1455e7201af794e66c4cfe074abab"></script>
+	<!-- <script async src="https://marketo.clearbit.com/assets/v1/marketo/forms.js"
+    data-clearbit-publishable-key="pk_0ad1455e7201af794e66c4cfe074abab"></script> -->
+  <script type="text/javascript">var pollForDefinition=function(scope,varname,callback){if(typeof scope[varname]!=="undefined"){return callback();} var interval=setInterval(function(){if(typeof scope[varname]!=="undefined"){clearInterval(interval);callback();}},250);};var script=document.createElement("script");script.src="https://marketo.clearbit.com/assets/v1/marketo/forms.js";script.async=true;script.setAttribute("data-clearbit-publishable-key","pk_afe9704e931f9015969a925cecd1303a");script.onerror=function(e){console.log("Clearbit Form JS unable to load");pollForDefinition(window,"MktoForms2",function(){MktoForms2.whenReady(function(form){form.setValues({clearbitFormStatus:"Clearbit Form JS unable to load"});});});};document.body.append(script);</script>                
+    
 
 	<!-- Segment Analytics.js -->
-	<script>
+	<!-- <script>
 		!function () {
 			var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
 			analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"]; analytics.factory = function (t) { return function () { var e = Array.prototype.slice.call(arguments); e.unshift(t); analytics.push(e); return analytics } }; for (var t = 0; t < analytics.methods.length; t++) { var e = analytics.methods[t]; analytics[e] = analytics.factory(e) } analytics.load = function (t, e) { var n = document.createElement("script"); n.type = "text/javascript"; n.async = !0; n.src = "https://cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(n, a); analytics._loadOptions = e }; analytics.SNIPPET_VERSION = "4.1.0";
@@ -31,7 +33,7 @@
 				analytics.page();
 			}
 		}();
-	</script>
+	</script> -->
 
 </body>
 
